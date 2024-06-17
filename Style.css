@@ -1,0 +1,157 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;1,6..12,200;1,6..12,600&display=swap');
+
+*{
+    font-family: 'Nunito',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+html::-webkit-scrollbar{
+    width: 1.4rem;
+}
+html::-webkit-scrollbar-track{
+    background: #222;
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--yellow);
+}
+body{
+    overflow-x: hidden;
+    padding-left: 35rem;
+}
+section{
+    min-height: 100vh;
+    padding: 5rem;
+    box-shadow:0px 5px 15px rgba(0,0,0,0.25);
+    background:white;
+    margin-left:4rem;
+}
+
+header{
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 35rem;
+    background:#fff;
+    box-shadow:0px 5px 15px rgba(0,0,0,0.25);
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding:2rem;
+}
+header .navbar h2{
+    text-align:center;
+    color:#333;
+    font-size:3rem;
+}
+ header .navbar ul li a{
+    display: block;
+    padding:0.8rem;
+    margin: 1.5rem 0;
+    color: #000000;
+    font-size: 1.6rem;
+    border-bottom:1px solid black;
+    padding-bottom:1rem;
+}
+.navbar ul{
+    list-style-type:none;
+}
+header .navbar ul li a:hover{ 
+    background:#000000;
+    color:#fff;
+}
+#menu{
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background:whitesmoke;
+    color: black;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+}
+ 
+/* section  */
+.retrun h2{
+    font-size:2.5rem;
+    font-family:Georgia, serif;
+    padding:1rem;
+}
+.retrun p{
+    font-size:1.8rem;
+    font-family:"Gill Sans", sans-serif;
+    padding:1.3rem;
+}
+.one{
+    padding:1rem;
+}
+.one p span{
+    font-weight:bold;
+}
+
+ /* Example of active link styling */
+ nav ul li a.active {
+    background-color: #007bff; /* Adjust as per your design */
+    color: white; /* Text color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px 10px; /* Padding */
+  }
+
+/* media queries  */
+@media(max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+    .one{
+        padding: 1rem;
+    }
+}
+
+@media(max-width:991px){
+    header{
+        left:-120%;
+        padding-top:60px;
+    }
+     #menu
+    {
+        display: block;
+    }
+
+   header.toggle{
+        left: 0%;
+    }
+    body{
+        padding: 0;
+    }
+}
+
+@media (max-width:768px) 
+{
+html{
+    font-size: 50%;
+}  
+section{
+    margin:0;
+}
+
+}
+@media (max-width:400px) 
+{
+header{
+    width: 100vw;
+}   
+}
